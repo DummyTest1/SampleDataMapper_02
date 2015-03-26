@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <mule xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.6.0"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xm="http://www.mulesoft.org/schema/mule/xml"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
@@ -18,8 +18,8 @@ http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schem
     <file:connector name="FileIn" autoDelete="true" streaming="true" validateConnections="true" doc:name="File"/>
     <expression-filter expression="#[xpath3('//gco:tracking-data[gco:carrier[text() != &quot;&quot;]]')] " name="Expression" doc:name="Expression"/>
     <data-mapper:config name="XML_To_XML" transformationGraphPath="xml_to_xml.grf" doc:name="XML_To_XML"/>
-    <flow name="foreachtestFlow">
-        <file:inbound-endpoint path="C:\Users\861322\Desktop\MULE\Input" connector-ref="FileIn" responseTimeout="10000" doc:name="File">
+    <flow name="foreachtestFlow" doc:name="foreachtestFlow">
+        <file:inbound-endpoint path="C:\Users\861322\Desktop\MULE\In" connector-ref="FileIn" responseTimeout="10000" doc:name="File">
 <!--         <byte-array-to-string-transformer/> -->
         </file:inbound-endpoint>
         <byte-array-to-string-transformer doc:name="Byte Array to String"/>
