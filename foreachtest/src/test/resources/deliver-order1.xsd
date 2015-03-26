@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://checkout.google.com/schema/2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="deliver-order1" type="ns:deliver-order1Type" xmlns:ns="http://checkout.google.com/schema/2"/>
+  <xs:complexType name="tracking-dataType">
+    <xs:sequence>
+      <xs:element name="carrier">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="FedEx"/>
+            <xs:enumeration value="UPS"/>
+            <xs:enumeration value="Mint"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Naveen"/>
+            <xs:enumeration value="Reddy"/>
+            <xs:enumeration value="Kumar"/>
+            <xs:enumeration value="Vans"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="tracking-number"/>
+      <xs:element type="xs:string" name="send-email"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deliver-order1Type">
+    <xs:sequence>
+      <xs:element type="ns:deliver-orderType" name="deliver-order" maxOccurs="unbounded" minOccurs="0" xmlns:ns="http://checkout.google.com/schema/2"/>
+    </xs:sequence>
+    <xs:attribute type="xs:long" name="google-order-number"/>
+  </xs:complexType>
+  <xs:complexType name="deliver-orderType">
+    <xs:sequence>
+      <xs:element type="ns:tracking-dataType" name="tracking-data" xmlns:ns="http://checkout.google.com/schema/2"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

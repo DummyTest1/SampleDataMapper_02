@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="861322" created="Fri Mar 13 11:51:01 IST 2015" description="XML To XML" guiVersion="3.4.4.P" id="1426236467892" licenseCode="Unlicensed" licenseType="Unknown" modified="Fri Mar 13 11:51:01 IST 2015" modifiedBy="861322" name="XML_To_XML" preview-file="C:/Users/861322/Desktop/MULE/Order.xml" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="0" __referenceCounter="1" __schemaType="{http://checkout.google.com/schema/2}deliver-orderType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="b25565f5-0de6-4f2c-a8b2-144ed1be1e90" _parent_id="__parent_id" _type="Input" id="e6107adb-5167-4e8f-b2a5-b325281c6970">
+<Record fieldDelimiter="," name="deliver_order" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __schemaType="{http://checkout.google.com/schema/2}tracking-dataType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order/ns0:tracking-data/ns0:carrier" containerType="SINGLE" label="carrier" name="carrier" type="string"/>
+<Field __index="1" __schemaType="{http://checkout.google.com/schema/2}tracking-dataType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order/ns0:tracking-data/ns0:name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="2" __schemaType="{http://checkout.google.com/schema/2}tracking-dataType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order/ns0:tracking-data/ns0:tracking-number" containerType="SINGLE" label="tracking-number" name="tracking_number" type="string"/>
+<Field __index="3" __schemaType="{http://checkout.google.com/schema/2}tracking-dataType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order/ns0:tracking-data/ns0:send-email" containerType="SINGLE" label="send-email" name="send_email" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __schemaType="{http://checkout.google.com/schema/2}deliver-orderType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="be00b130-ada8-4fe8-9aab-b329adc1f08e" _parent_id="__parent_id" _type="Output" id="ec8c0236-fc99-4698-8217-99c35a295487">
+<Record fieldDelimiter="," name="deliver_order" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __schemaType="{http://checkout.google.com/schema/2}tracking-dataType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order/ns0:tracking-data/ns0:carrier" containerType="SINGLE" label="carrier" name="carrier" type="string"/>
+<Field __index="1" __schemaType="{http://checkout.google.com/schema/2}tracking-dataType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order/ns0:tracking-data/ns0:name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="2" __schemaType="{http://checkout.google.com/schema/2}tracking-dataType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order/ns0:tracking-data/ns0:tracking-number" containerType="SINGLE" label="tracking-number" name="tracking_number" type="string"/>
+<Field __index="3" __schemaType="{http://checkout.google.com/schema/2}tracking-dataType" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/ns0:deliver-order/ns0:tracking-data/ns0:send-email" containerType="SINGLE" label="send-email" name="send_email" type="string"/>
+</Record>
+</Metadata>
+<Metadata __filteredMetadata="false" __index="0" __referenceCounter="1" __schemaType="{http://checkout.google.com/schema/2}deliver-order1Type" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1" _dataStructure="OBJECT" _id="__id" _type="Input" id="b25565f5-0de6-4f2c-a8b2-144ed1be1e90">
+<Record fieldDelimiter="," name="deliver_order1" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="4" __schemaType="{http://checkout.google.com/schema/2}deliver-order1Type" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/@google-order-number" containerType="SINGLE" label="google-order-number" name="google_order_number" type="long"/>
+<Field __artificialType="XPATH" __xpath="{http://checkout.google.com/schema/2=ns0}ns0:deliver-order/ns0:tracking-data[ns0:carrier[text() = 'UPS']]" containerType="SINGLE" label="UPS" name="UPS" type="string"/>
+</Record>
+</Metadata>
+<Metadata __filteredMetadata="false" __index="0" __referenceCounter="1" __schemaType="{http://checkout.google.com/schema/2}deliver-order1Type" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1" _dataStructure="OBJECT" _id="__id" _type="Output" id="be00b130-ada8-4fe8-9aab-b329adc1f08e">
+<Record fieldDelimiter="," name="deliver_order1" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="4" __schemaType="{http://checkout.google.com/schema/2}deliver-order1Type" __sourcePath="{http://checkout.google.com/schema/2=ns0}/ns0:deliver-order1/@google-order-number" containerType="SINGLE" label="google-order-number" name="google_order_number" type="long"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node cacheInMemory="true" charset="UTF-8" enabled="enabled" fileURL="dict:outputPayload" guiName="XML WRITER" guiX="900" guiY="20" id="EXT_XML_WRITER0" type="EXT_XML_WRITER" xmlSchemaURL="./src/test/resources/deliver-order1.xsd">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:element clover:name="ns0:deliver-order1" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" xmlns:ns0="http://checkout.google.com/schema/2" google-order-number="$0.google_order_number" clover:inPort="0">
+  <clover:element clover:name="ns0:deliver-order" clover:inPort="1" clover:key="__parent_id" clover:parentKey="__id">
+    <clover:element clover:name="ns0:tracking-data">
+      <clover:element clover:name="ns0:carrier">$1.carrier</clover:element>
+      <clover:element clover:name="ns0:name">$1.name</clover:element>
+      <clover:element clover:name="ns0:tracking-number">$1.tracking_number</clover:element>
+      <clover:element clover:name="ns0:send-email">$1.send_email</clover:element>
+    </clover:element>
+  </clover:element>
+</clover:element>]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__rootGlobalElementName"><![CDATA[{http://checkout.google.com/schema/2}deliver-order1]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'ns0:deliver-order1' -&gt; 'ns0:deliver-order1'" guiX="460" guiY="20" id="FOREACH_NS0_DELIVER_ORDER1_NS0_DELIVER_ORDER1" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.google_order_number = input.google_order_number;
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'ns0:deliver-order' -&gt; 'ns0:deliver-order'" guiX="460" guiY="120" id="FOREACH_NS0_DELIVER_ORDER_NS0_DELIVER_ORDER" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+output.__parent_id = input.__parent_id;
+//END -> DO NOT REMOVE
+output.carrier = input.carrier;
+output.name = input.name;
+output.tracking_number = input.tracking_number;
+output.send_email = input.send_email;
+]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="XML READER" guiX="20" guiY="20" id="XML_READER0" type="XML_READER">
+<attr name="xmlSchemaURL"><![CDATA[./src/test/resources/deliver-order1.xsd]]></attr>
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context namespacePaths="ns0=&quot;http://checkout.google.com/schema/2&quot;" outPort="0" sequenceField="__id" xpath="/ns0:deliver-order1">
+  <Mapping cloverField="google_order_number" trim="true" xpath="@google-order-number"/>
+  <Mapping cloverField="UPS" namespacePaths="ns0=&quot;http://checkout.google.com/schema/2&quot;" trim="true" xpath="ns0:deliver-order/ns0:tracking-data[ns0:carrier[text() = 'UPS']]"/>
+  <Context generatedKey="__parent_id" namespacePaths="ns0=&quot;http://checkout.google.com/schema/2&quot;" outPort="1" parentKey="__id" sequenceField="__id" xpath="ns0:deliver-order">
+    <Mapping cloverField="carrier" namespacePaths="ns0=&quot;http://checkout.google.com/schema/2&quot;" trim="true" xpath="ns0:tracking-data/ns0:carrier"/>
+    <Mapping cloverField="name" namespacePaths="ns0=&quot;http://checkout.google.com/schema/2&quot;" trim="true" xpath="ns0:tracking-data/ns0:name"/>
+    <Mapping cloverField="tracking_number" namespacePaths="ns0=&quot;http://checkout.google.com/schema/2&quot;" trim="true" xpath="ns0:tracking-data/ns0:tracking-number"/>
+    <Mapping cloverField="send_email" namespacePaths="ns0=&quot;http://checkout.google.com/schema/2&quot;" trim="true" xpath="ns0:tracking-data/ns0:send-email"/>
+  </Context>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__rootGlobalElementName"><![CDATA[{http://checkout.google.com/schema/2}deliver-order1]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_NS0_DELIVER_ORDER1_NS0_DELIVER_ORDER1:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="be00b130-ada8-4fe8-9aab-b329adc1f08e" outPort="Port 0 (out)" toNode="EXT_XML_WRITER0:0"/>
+<Edge debugMode="true" fromNode="FOREACH_NS0_DELIVER_ORDER_NS0_DELIVER_ORDER:0" guiBendpoints="" id="Edge3" inPort="Port 1 (in)" metadata="ec8c0236-fc99-4698-8217-99c35a295487" outPort="Port 0 (out)" toNode="EXT_XML_WRITER0:1"/>
+<Edge debugMode="true" fromNode="XML_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="b25565f5-0de6-4f2c-a8b2-144ed1be1e90" outPort="Port 0 (out)" toNode="FOREACH_NS0_DELIVER_ORDER1_NS0_DELIVER_ORDER1:0"/>
+<Edge debugMode="true" fromNode="XML_READER0:1" guiBendpoints="" id="Edge2" inPort="Port 0 (in)" metadata="e6107adb-5167-4e8f-b2a5-b325281c6970" outPort="Port 1 (out)" toNode="FOREACH_NS0_DELIVER_ORDER_NS0_DELIVER_ORDER:0"/>
+</Phase>
+</Graph>
